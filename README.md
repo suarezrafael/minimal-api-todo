@@ -17,10 +17,14 @@ Descrição:
 Obs.: 30 min de prática, 10 min de comentários.
 <hr>
 1. Abrir terminal (Novo template)
-   dotnet --version
-   Criar projeto via comando
-   dotnet new web -o CompassTodo
 
+```
+   dotnet --version
+```
+   Criar projeto via comando
+```
+   dotnet new web -o CompassTodo
+```
 2. Criar pasta Models (Models)
 
 3. Criar record Todo na pasta models
@@ -34,9 +38,10 @@ Obs.: 30 min de prática, 10 min de comentários.
     });
  ```
 5. Adicionar pacote do EF Core (EntityFrameworkCore)
+```
    dotnet add package Microsoft.EntityFrameworkCore.SqLite
    dotnet add package Microsoft.EntityFrameworkCore.Design
-   
+```   
 6. Criar pasta Data
 7. Criar classe AppDbContext
 ```c#
@@ -57,11 +62,15 @@ Obs.: 30 min de prática, 10 min de comentários.
       return Results.Ok(todo);
    });
 ```
-10. dotnet tool install --global dotnet-ef 
-10. dotnet ef migrations add InitialMigration (Trabalhando com as migrações)
-11. dotnet ef database update
-12. dotnet add package Flunt(ViewModels)
-13. Criar a pasta ViewModels Criar a classe CreateTodoViewModel
+```
+10. Instalar o ef global se necessario
+11. dotnet tool install --global dotnet-ef 
+12. dotnet ef migrations add InitialMigration (Trabalhando com as migrações)
+13. dotnet ef database update
+14. dotnet add package Flunt(ViewModels)
+```
+
+15. Criar a pasta ViewModels Criar a classe CreateTodoViewModel
 ```c#
     public class CreateTodoViewModel : Notifiable<Notification>
     {  public string Title { get; set; }
