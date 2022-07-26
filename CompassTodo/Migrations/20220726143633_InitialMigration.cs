@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Todos.Migrations
+namespace CompassTodo.Migrations
 {
     public partial class InitialMigration : Migration
     {

@@ -1,5 +1,5 @@
-using Todos.Data;
-using Todos.ViewModels;
+using CompassTodo.Data;
+using CompassTodo.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>();
@@ -9,10 +9,10 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapGet("v1/todos", (AppDbContext context) => {
-    var todo = context.Todos.ToList();
-    return Results.Ok(todo);
-}).Produces<Todos.Models.Todo>();
+app.MapGet("/", (AppDbContext context) => {
+    var todos = context.Todos.ToList();
+    return Results.Ok(todos);
+});
 
 app.MapPost("v1/todos", (
     AppDbContext context,
@@ -25,6 +25,5 @@ app.MapPost("v1/todos", (
     context.Todos.Add(todo);
     context.SaveChanges();
     return Results.Created($"/v1/todos/{todo.Id}", todo);
-}).Produces<Todos.Models.Todo>();
-
+});
 app.Run();

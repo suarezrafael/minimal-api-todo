@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todos", "Todos.csproj", "{1B8A498D-49A2-48FE-AF6C-079E2C0DD3D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompassTodo", "CompassTodo.csproj", "{005876E7-5D81-4999-9E13-9AC7CDB1C85C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B8A498D-49A2-48FE-AF6C-079E2C0DD3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B8A498D-49A2-48FE-AF6C-079E2C0DD3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B8A498D-49A2-48FE-AF6C-079E2C0DD3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B8A498D-49A2-48FE-AF6C-079E2C0DD3D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005876E7-5D81-4999-9E13-9AC7CDB1C85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005876E7-5D81-4999-9E13-9AC7CDB1C85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005876E7-5D81-4999-9E13-9AC7CDB1C85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005876E7-5D81-4999-9E13-9AC7CDB1C85C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9764368C-51D4-486B-8842-990E7EF445C1}
+		SolutionGuid = {3EF9CF2B-B910-4BAF-8F58-7149EAFB07FC}
 	EndGlobalSection
 EndGlobal
