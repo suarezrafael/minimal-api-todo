@@ -92,7 +92,7 @@ app.MapPost("v1/todos",(
 ```
 15. Rodar o app , criar no postman.
 16. dotnet add package Swashbuckle.AspNetCore (Documentação com Swagger)
-17 Adicione no Program.cs
+17. 17 Adicione no Program.cs
 ```c#
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
