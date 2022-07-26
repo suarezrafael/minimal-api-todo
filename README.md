@@ -28,8 +28,9 @@ Obs.: 30 min de prática, 10 min de comentários.
 2. Criar pasta Models (Models)
 
 3. Criar record Todo na pasta models
+```c#
    public record Todo(Guid Id, string Title, bool Done);
-
+```
 4. Implementar chamada no arquivo Program.cs
 ```c#
     app.MapGet("/", () => {
