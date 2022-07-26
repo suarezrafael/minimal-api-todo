@@ -45,7 +45,7 @@ Obs.: 30 min de prática, 10 min de comentários.
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite("DataSource=app.db;Cache=Shared");
     }
-    ```
+```
 8. No Program.cs adicione  (Configurando o DbContext)
 ```c#
    builder.Services.AddDbContext<AppDbContext>();
